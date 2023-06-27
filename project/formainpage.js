@@ -88,7 +88,7 @@ function paynow() {
     expyear = document.getElementById("expyear").value;
     cvvnum = document.getElementById("cvvnum").value;
     if (cardnum !== "" && fullname !== "" && address !== "" && expmonth !== "" && expyear !== "" && cvvnum !== "") {
-        location.assign("/thanku.html")
+        location.assign("./thanku.html")
     } else {
         forreq = document.getElementById("forrequired");
         forreq.innerHTML = "All fields are required.";
@@ -148,6 +148,8 @@ function forputina(jin) {
 
 function checkout1() {
     checkoutarray.shift();
+    console.log(checkoutarray);
+    sessionStorage.setItem("mylst" , checkoutarray)
     document.cookie = checkoutarray;
 
     location.assign("./checkout.html")
@@ -155,11 +157,9 @@ function checkout1() {
 
 function checkout() {
     var q = document.cookie;
-    let d = sessionStorage.getItem("username")
-    let x  = "username="+ d +";";
-    var w = q.replace(x, "");
+    var ab = sessionStorage.getItem("mylst")
     let phelewala = document.getElementById("putintable1");
-    var e = JSON.parse("[" + w + "]");
+    var e = JSON.parse("[" + ab + "]");
     e.forEach(arrayprase);
 }
 
