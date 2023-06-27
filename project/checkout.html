@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<title>Payment gateway</title>
+<style>
+    * {
+        margin: 0;
+        padding: 4px;
+    }
+
+    body {
+        background-color: lightblue;
+        margin: 0;
+        font-size: 17px;
+        line-height: 1.6;
+        font-family: "Poppins", sans-serif;
+        background: radial-gradient(#fff, #77f0f0);
+
+    }
+
+    .paymentfulldiv {
+        background-color: rgba(248, 240, 240, 0.699);
+        margin-top: 115px;
+        text-align: center;
+        font-size: 30px;
+        /* height: 600px; */
+        width: 1000px;
+    }
+
+    .table table {
+        border-collapse: collapse;
+        width: 888px;
+        /* max-width: 700px; */
+        margin-left: 44px;
+        max-width: 900px;
+        border-right: hidden;
+        border-left: hidden;
+        font-size: 19px;
+
+    }
+
+    .checkoutbuttons button {
+        font-size: 25px;
+        background-color: orange;
+    }
+    .checkoutbuttons button:hover{
+        background-color: #41c469;
+    }
+    .totalbill {
+        margin-left: 77%;
+        font-size: 24px;
+    display: flex;
+    }
+</style>
+
+<body onload="checkout()">
+
+    <center>
+        <div class="paymentfulldiv">
+            Your order review
+
+            <div class="table" id="checkouttable">
+                <table border="1px" id="checktable">
+                    <tr>
+                        <td>Recipt no.</td>
+                        <td>Name</td>
+                        <td>Rate</td>
+                    </tr>
+                    
+
+                </table>
+                <div class="totalbill" id="totalbill">
+                    <p>Total : &#8377;<div id="nothing"></div></p>
+
+                </div>
+                <div class="checkoutbuttons" id="checkoutbut">
+                    <button onclick="cancel()">Cancel</button>
+                    <button onclick="buypro()">Pay Now</button>
+                </div>
+            </div>
+
+        </div>
+    </center>
+
+    <script src="./formainpage.js"></script>
+
+</body>
+
+</html>

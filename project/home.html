@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Thakur Shopping </title>
+    <link rel="stylesheet" href="./mystyle.css">
+    <link rel=preconnect href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: radial-gradient(#fff, #77f0f0);
+        }
+        .footer{
+            margin-top:0px;
+        }
+        
+    </style>
+</head>
+
+<body onload="try1()">
+    <!-- <script>
+        function try1() {
+    console.log("Success");
+    let a = document.getElementById("greetings");
+    let b = new Date();
+    let c = b.getHours();
+    if (c <= 12) {
+        a.innerHTML = "Good morning," + username;
+    }
+    else if (c >12 && c <= 18) {
+        a.innerHTML = "Good afternoon," + username;
+    }
+    else if (c > 18 && c <= 23) {
+        a.innerHTML = "Good evening," + username;
+    }
+    else{
+        a.innerHTML = "sorry," + username;
+    }
+    console.log(username);
+}
+    </script> -->
+    <div class="header">
+
+        <div class="navi">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="./img/main_logo.jpeg" width="250px">
+                </div>
+            </div>
+            <div class="forallul">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./products.html">Products</a></li>
+                        <li><a href="./about_us.html">About</a></li>
+                        <li><a href="./contact_us.html">Contact</a></li>
+                        <li><a href="./index.html">Account</a></li>
+                        <li>
+                            <div id="greetings" class="greetings">
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="for_signup" id="sign-up"><a href="./sign_in.html">Sign up/sign in </a></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <h1>Start Now,Not Tomorrow!<img src="./img/sign-out-alt-solid.svg" width="20px" height="20px">   </h1>
+                    <p> If you can't<br>Stop Thinking<br>About It...<br>BUY IT.<br><br></p>
+                    <a href="./products.html" class="btn">Explore Now &#8594;</a>
+                </div>
+                <div>
+                    <div class="col-2">
+                        <img src="./img/homepage.jpeg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--------------- offer ------------>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="./img/sony_tv.jpeg" class="offer-img" usemap="#fortv" width="400px" height="400px">
+                    <map name="fortv">
+                        <area shape="rect" coords="0,0,600,400" alt="tv" href="./paymentgate.html">
+                    </map>
+                </div>
+                <div class="col-2">
+                    <p>Exclusively Available on Thakur Shopping</p>
+                    <h1>Sony Bravia LED Smart TV</h1>
+                    <small>The Sony BRAVIA TV at 40-inch is suitable for users who have small-sized drawing rooms. It is
+                        compatible with most digital TV sets, and comes with most connectivity options like HDMI and USB
+                        to connect and display content from other digital devices like smartphones, PCs, and tablets. It
+                        has been priced quite competitively to go against the likes of other smart TVs in its
+                        range.</small><br>
+                   <a class="btn" onclick="buypro()" style="cursor:pointer;color: #2424cac4;"><u>Buy Now &#8594;</u></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------- brands -------------------->
+    <div class="brands">
+        <div class="b-small-container">
+            <div class="b-row">
+                <div class="col-3">
+                    <div class="col-3-1">
+                        <img src="./img/godrej.jpeg">
+                    </div>
+                    <div class="col-3-2">
+                        <img src="./img/oppo.jpeg">
+                    </div>
+                    <div class="col-3-3">
+                        <img src="./img/philips.jpeg">
+                    </div>
+                    ‪<div class="col-3-4">
+                        <img src="./img/sony.jpeg">
+                    </div>
+                    <div class="col-3-5">
+                        <img src="./img/casio.jpeg">
+                    </div>
+                    <div class="col-3-6">
+                        <img src="./img/levis.jpeg">
+                    </div>
+                    <div class="col-3-7">
+                        <img src="./img/adidas.jpeg">
+                    </div>
+                    <div class="col-3-8">
+                        <img src="./img/samsung.jpeg">
+                    </div>
+                    <div class="col-3-9">
+                        <img src="./img/LG.jpeg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!---------------- footer------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <!-- <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p> -->
+                    <div class="app-logo">
+                        <img src="./img/appstore.jpg">
+                        <img src="./img/downloadongoogleplay.jpeg">
+                    </div>
+                </div>
+                <div class="for-hr-line"></div>
+                <div class="footer-col-3">
+                    <!-- <h5>Follow us</h5> -->
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <center>
+                <p class="Copyright">Copyright &copy; 2020 - Thakur shopping Inc.</p>
+            </center>
+        </div>
+    </div>
+    <script src="./formainpage.js"></script>
+</body>
+
+</html>

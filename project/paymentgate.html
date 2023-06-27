@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<title>Payment gateway</title>
+<style>
+  * {
+    margin: 0;
+    padding: 4px;
+  }
+
+  body {
+    background-color: lightblue;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.6;
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(#fff, #77f0f0);
+
+  }
+
+  @keyframes forborder {
+    from {
+      border-color: black;
+    }
+
+    to {
+      border-color: greenyellow;
+    }
+  }
+
+  .paymentfulldiv {
+    background-color: whitesmoke;
+    margin-top: 110px;
+    text-align: left;
+    height: 485px;
+    width: 600px;
+    border: 2px brown;
+    border-style: solid;
+    border-radius: 10px;
+  }
+
+  .paymentfulldiv h2 {
+    margin-left: 192px;
+    color: #265244fc
+  }
+
+  .paymentfulldiv input {
+    width: 93%;
+    height: 30px;
+    /* border: 1px; */
+    border-color: black;
+  }
+
+  .paymentfulldiv input:hover {
+    animation-name: forborder;
+    animation-duration: 0.3s;
+    border-color: greenyellow;
+    cursor: text;
+  }
+
+  .paymentfulldiv input:focus-within {
+    border: 2px solid greenyellow;
+  }
+
+  .exp input[type='number'] {
+    width: 65px;
+    height: 23px;
+    margin-right: 38px;
+  }
+
+  .exp {
+    width: 233px;
+    max-width: 233px;
+  }
+
+  .cvv {
+    margin-left: 362px;
+    margin-top: -80px;
+
+  }
+
+  .cvv input[type='number'] {
+    width: 65px;
+    height: 23px;
+    margin-right: 38px;
+  }
+
+  .paynow {
+    margin-top: 30px;
+  }
+
+  .paynow button {
+    font-size: 20px;
+    position: absolute;
+    margin-top: -15px;
+  }
+
+  .paynow button:hover {
+    background-color: #f6cd37bf;
+  }
+
+  .terms {
+    font-size: 14px;
+    padding: 0px;
+    display: flex;
+    margin-left: 6px;
+  }
+
+  .terms input {
+    width: 18px;
+    margin-top: 18px;
+  }
+
+  .terms p {
+    margin-top: 19px;
+  }
+  .forreq{
+    color: red;
+    
+    margin-top: -13px;
+    margin-left: 104px;
+  }
+</style>
+
+<body>
+  <center>
+    <div class="paymentfulldiv">
+      <h2>Debit/credit card</h2>
+      <div class="personalinfo">
+        <div class="forinput">
+          <h4>Full name</h4>
+          <input type="text" placeholder="Full name" autocomplete="off" class="forpay" id="fullname">
+          <h4>Address</h4>
+          <input type="text" placeholder="Address" autocomplete="off" class="forpay" id="address">
+          <h4>Card number</h4>
+          <input type="number" placeholder="Card number" autocomplete="off" class="forpay" id="cardnumber">
+        </div>
+        <div class="exp">
+          <p>Expiration</p>
+          <input type="number" placeholder="xx" autocomplete="off" min="1" max="12" class="forpay" id="expmonth"><input type="number"
+            placeholder="xxxx" autocomplete="off" minlength="4" maxlength="4" class="forpay" id="expyear">
+        </div>
+        <div class="cvv">
+          <p>CVV</p>
+          <input type="number" placeholder="xxx" autocomplete="off" minlength="3" maxlength="3" class="forpay" id="cvvnum">
+        </div>
+        <div class="terms">
+          <input type="checkbox" style="cursor: pointer;" class="forpay" checked>
+          <p>By checking this box, I agree to the Terms & Conditions & Privacy Policy.</p>
+        </div>
+        <div class="paynow">
+          <button onclick="paynow()">Pay Now</button>
+          <div id="forrequired" class="forreq"></div>
+        </div>
+
+      </div>
+    </div>
+  </center>
+
+  <script src="./formainpage.js"></script>
+</body>
+
+</html>

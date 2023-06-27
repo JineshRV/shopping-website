@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment gateway</title>
+    <link rel="stylesheet" href="https://p.w3layouts.com/demos/payment_form_widget/web/css/style.css">
+</head>
+<body>
+    <div class="resp-tabs-container">
+        <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Credit Card</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+            <div class="payment-info">
+                <h3>Personal Information</h3>
+                <form>
+                    <div class="tab-for">				
+                        <h5>EMAIL ADDRESS</h5>
+                            <input type="text" value="">
+                        <h5>FIRST NAME</h5>													
+                            <input type="text" value="">
+                    </div>			
+                </form>
+                <h3 class="pay-title">Credit Card Info</h3>
+                <form>
+                    <div class="tab-for">				
+                        <h5>NAME ON CARD</h5>
+                            <input type="text" value="">
+                            <h5>Address</h5>
+                            <input type="text" value="">
+                        <h5>CARD NUMBER</h5>													
+                            <input class="pay-logo" type="text" value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}" required="">
+                    </div>	
+                    <div class="transaction">
+                        <div class="tab-form-left user-form">
+                            <h5>EXPIRATION</h5>
+                                <ul>
+                                    <li>
+                                        <input type="number" class="text_box" value="6" min="1">	
+                                    </li>
+                                    <li>
+                                        <input type="number" class="text_box" value="1988" min="1">	
+                                    </li>
+                                    
+                                </ul>
+                        </div>
+                        <div class="tab-form-right user-form-rt">
+                            <h5>CVV NUMBER</h5>													
+                            <input type="text" value="xxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxx';}" required="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <input type="submit" value="SUBMIT">
+                </form>
+                <div class="single-bottom">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="brand" value="">
+                                <label for="brand"><span></span>By checking this box, I agree to the Terms &amp; Conditions &amp; Privacy Policy.</label>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Net Banking</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+            <div class="payment-info">
+                <h3>Net Banking</h3>
+                <div class="radio-btns">
+                    <div class="swit">								
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio" checked=""><i></i>Andhra Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Allahabad Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Bank of Baroda</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Canara Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>IDBI Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Icici Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Indian Overseas Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Punjab National Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>South Indian Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>State Bank Of India</label> </div></div>		
+                    </div>
+                    <div class="swit">								
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio" checked=""><i></i>City Union Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>HDFC Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>IndusInd Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Syndicate Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Deutsche Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Corporation Bank</label> </div></div>
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>UCO Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Indian Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>Federal Bank</label> </div></div>	
+                        <div class="check_box"> <div class="radio"> <label><input type="radio" name="radio"><i></i>ING Vysya Bank</label> </div></div>	
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <a href="#">Continue</a>
+            </div>
+        </div>
+        <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>PayPal</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+            <div class="payment-info">
+                <h3>PayPal</h3>
+                <h4>Already Have A PayPal Account?</h4>
+                <div class="login-tab">
+                    <div class="user-login">
+                        <h2>Login</h2>
+                        
+                        <form>
+                            <input type="text" value="name@email.com" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'name@email.com';}" required="">
+                            <input type="password" value="PASSWORD" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'PASSWORD';}" required="">
+                                <div class="user-grids">
+                                    <div class="user-left">
+                                        <div class="single-bottom">
+                                                <ul>
+                                                    <li>
+                                                        <input type="checkbox" id="brand1" value="">
+                                                        <label for="brand1"><span></span>Remember me?</label>
+                                                    </li>
+                                                </ul>
+                                        </div>
+                                    </div>
+                                    <div class="user-right">
+                                        <input type="submit" value="LOGIN">
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="resp-accordion" role="tab" aria-controls="tab_item-3"><span class="resp-arrow"></span>Debit Card</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">	
+            <div class="payment-info">
+                
+                <h3 class="pay-title">Dedit Card Info</h3>
+                <form>
+                    <div class="tab-for">				
+                        <h5>NAME ON CARD</h5>
+                            <input type="text" value="">
+                        <h5>CARD NUMBER</h5>													
+                            <input class="pay-logo" type="text" value="0000-0000-0000-0000" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '0000-0000-0000-0000';}" required="">
+                    </div>	
+                    <div class="transaction">
+                        <div class="tab-form-left user-form">
+                            <h5>EXPIRATION</h5>
+                                <ul>
+                                    <li>
+                                        <input type="number" class="text_box" value="6" min="1">	
+                                    </li>
+                                    <li>
+                                        <input type="number" class="text_box" value="1988" min="1">	
+                                    </li>
+                                    
+                                </ul>
+                        </div>
+                        <div class="tab-form-right user-form-rt">
+                            <h5>CVV NUMBER</h5>													
+                            <input type="text" value="xxxx" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'xxxx';}" required="">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <input type="submit" value="SUBMIT">
+                </form>
+                <div class="single-bottom">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="brand" value="">
+                                <label for="brand"><span></span>By checking this box, I agree to the Terms &amp; Conditions &amp; Privacy Policy.</label>
+                            </li>
+                        </ul>
+                </div>
+            </div>	
+        </div>
+    </div>
+    <script src="https://p.w3layouts.com/demos/payment_form_widget/web/js/easyResponsiveTabs.js"></script>
+    <script src="https://p.w3layouts.com/demos/payment_form_widget/web/js/jquery.min.js"></script>
+</body>
+</html>

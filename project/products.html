@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products
+    </title>
+    <link rel="stylesheet" href="./mystyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            max-width: 2100px;
+            width: 1536px;
+        }
+
+        .greetings {
+            width: 200px;
+        }
+
+        .checkoutbut {
+            background-color: whitesmoke;
+            width: 1129px;
+            max-width: 1129px;
+            margin-left: 187px;
+        }
+
+        .checkoutbut button {
+            margin-left: 81%;
+            margin-top: 28px;
+            height: 31px;
+            width: 146px;
+            font-size: 20px;
+            background-color: #b2d6f6;
+            color: #990b0b;
+            border: hidden;
+            border-radius: 20px;
+        }
+        .checkoutbut button:hover{
+            background-color: #b3f8b3;
+        }
+
+        .forgotop {
+            margin-left: 1000px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body onload="forprosec()" background="./img/homepage.jpeg" style="background-repeat:no-repeat; background-size:cover;">
+    <!-- <div class="header"> -->
+
+    <div class="p-navi" onload="try2()">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./img/main_logo.jpeg" width="250px">
+            </div>
+        </div>
+        <div class="forallul">
+            <nav>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="" style="background-color: rgb(122, 155, 122);">Products</a></li>
+                    <li><a href="./about_us.html">About</a></li>
+                    <li><a href="./contact_us.html">Contact</a></li>
+                    <li><a href="./home.html">Account</a></li>
+                    <li>
+                        <div id="greetings" class="greetings">
+
+                        </div>
+                    </li>
+                    <li>
+                        <div class="for_signup" id="sign-up"><a href="./sign_in.html">Sign up/sign in</a></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    
+    <div class="pcontainer" id="fortop">
+        <div class="p-search">
+            <div class="searchinput"><br />
+                <input type="text" id="searchbar" placeholder="Search for something...">
+            </div>
+            <button onclick="searchresult()">Search</button>
+        </div>
+        <div id="checkoutbut" class="checkoutbut"><button onclick="checkout1()" ><b>Checkout --></b></button></div>
+        <div class="searchresult">
+            <br />
+            <!-- <div id="addtocart" class="addtocart"><button>Checkout
+                </button>
+            </div> -->
+            <!-- <div id="defaultpro" onload="showpro()"></div> -->
+            <!-- <button onload="showpro()"></button> -->
+            <div id="jsdemo">
+
+                <!-- <div id="pro1">
+                    <img src="https://drop.ndtv.com/TECH/product_database/images/913201720152AM_635_iphone_x.jpeg"
+                        alt="iphone image" width="100px" height="100px">
+                    <div class="ccooll">
+                        <p>Name: Iphone 12</p>
+
+                        <p>Discription: This is very expensive phone that u cant afford.</p>
+                        <p style="font-size: 30px;">Price: 1,29,000 &#8377;</p>
+                    </div>
+                    <button onclick="buypro()">Buy now</button>
+                </div><br /> -->
+                <!-- <div id="pro1">
+                    <img src="https://drop.ndtv.com/TECH/product_database/images/913201720152AM_635_iphone_x.jpeg"
+                        alt="iphone image" width="100px" height="100px">
+                    <div class="ccooll">
+                        <p>Name: Iphone 12</p>
+
+                        <p>Discription: This is very expensive phone that u cant afford.</p>
+                        <p style="font-size: 30px;">Price: 1,29,000 &#8377;</p>
+                    </div>
+                </div><br />
+                <div id="pro1">
+                    <img src="https://drop.ndtv.com/TECH/product_database/images/913201720152AM_635_iphone_x.jpeg"
+                        alt="iphone image" width="100px" height="100px">
+                    <div class="ccooll">
+                        <p>Name: Iphone 12</p>
+
+                        <p>Discription: This is very expensive phone that u cant afford.</p>
+                        <p style="font-size: 30px;">Price: 1,29,000 &#8377;</p>
+                    </div>
+                </div><br />
+                <div id="pro1">
+                    <img src="https://drop.ndtv.com/TECH/product_database/images/913201720152AM_635_iphone_x.jpeg"
+                        alt="iphone image" width="100px" height="100px">
+                    <div class="ccooll">
+                        <p>Name: Iphone 12</p>
+
+                        <p>Discription: This is very expensive phone that u cant afford.</p>
+                        <p style="font-size: 30px;">Price: 1,29,000 &#8377;</p>
+                    </div>
+                </div><br /> -->
+            </div>
+        </div>
+        
+    </div>
+    
+
+
+    <!---------------- footer------------>
+    <!-- <footer> -->
+    <div class="footer">
+        <div class="p-f-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <!-- <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p> -->
+                    <div class="app-logo">
+                        <img src="./img/appstore.jpg">
+                        <img src="./img/downloadongoogleplay.jpeg">
+                    </div>
+                </div>
+                <div class="for-hr-line"></div>
+                <div class="footer-col-3">
+                    <!-- <h5>Follow us</h5> -->
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="forgotop"><a href="#fortop">Top&#8657;</a></div> -->
+            <hr>
+            <center>
+                <p class="Copyright">Copyright &copy; 2020 - Thakur shopping Inc.</p>
+            </center>
+        </div>
+    </div>
+    </footer>
+
+    <script src="./formainpage.js"></script>
+</body>
+
+</html>
